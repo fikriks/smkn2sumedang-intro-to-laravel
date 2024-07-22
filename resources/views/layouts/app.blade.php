@@ -43,7 +43,7 @@
                         @auth
                             <li><a href="{{ route('home') }}" class="nav-link px-2">Home</a></li>
                             <li><a href="{{ route('class-rooms.index') }}" class="nav-link px-2">Data Kelas</a></li>
-                            <li><a href="#" class="nav-link px-2">Data Siswa</a></li>
+                            <li><a href="{{ route('students.index') }}" class="nav-link px-2">Data Siswa</a></li>
                         @endauth
                     </ul>
 

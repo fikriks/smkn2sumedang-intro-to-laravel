@@ -29,9 +29,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <li><a href="{{ route('home') }}" class="nav-link px-2">Home</a></li>
-                        <li><a href="#" class="nav-link px-2">Data Kelas</a></li>
-                        <li><a href="#" class="nav-link px-2">Data Siswa</a></li>
+                        @auth
+                            <li><a href="{{ route('home') }}" class="nav-link px-2">Home</a></li>
+                            <li><a href="#" class="nav-link px-2">Data Kelas</a></li>
+                            <li><a href="#" class="nav-link px-2">Data Siswa</a></li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
